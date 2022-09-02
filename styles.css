@@ -6,6 +6,7 @@ body {
   flex: 1; 
   height: 100vh;
   font-size: 18px;
+  flex:auto;
 }
 
 ul {
@@ -27,7 +28,7 @@ a:hover {
 }
 
 img {
-  width: 250px;
+  max-width: 250px;
   margin: 10px 5px;
 }
 
@@ -45,12 +46,13 @@ button {
   padding: 10px 60px;
   text-align: center;
   font-size: 18px;
-  font: optional;
   cursor: pointer;
   border-radius: 8px;
   font-weight: bold;
-
-
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #929497;
 }
 
 .button1 {
@@ -59,7 +61,7 @@ button {
 }
 .button1:hover {
   background-color: #E5E7EB;
-  color:#3882F6
+  color: #3882F6;
 }
 
 .button2 {
@@ -81,13 +83,25 @@ button {
   justify-content: center;
 }
 
-.flex1{ /* Flex box that contains everything*/
-  width: 940px;
+.flex1{ /* Flex box that contains everything of the top part*/
+  width: 1200px;
 }
 
 .header {  /*header logo and links*/
   display: flex;
   justify-content: space-between;
+}
+
+.profile {
+  background-color:#1F2937;
+  padding: 5px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+
+.pic {
+  height: 40px;
 }
 
 .container { /*contains "This is awesome" and image-main*/
@@ -99,11 +113,12 @@ button {
 
 .intro {  /*Text of This is Awesome*/
   width: 900px;
+  flex:auto
 }
 
 .main-img {
-  width: auto;
-  height: 400px;
+  max-width: 400px;
+  height: auto;
 }
 
 
@@ -125,7 +140,8 @@ button {
 
 .cards { /*Container of all 4 cards */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 70px;
 }
 .card {
  width: 250px;
@@ -144,7 +160,7 @@ button {
 }
 
 
-.flex2 { /*Container of the quotes*/
+.flex2 { /*Container of the quote*/
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -159,7 +175,7 @@ button {
   font-weight: lighter;
 }
 
-.signup { /*White area of the blue box*/
+.signup { /*White area of the signup box*/
   display: flex;
   justify-content: center;
   align-items: center;
