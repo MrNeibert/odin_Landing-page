@@ -1,0 +1,27 @@
+body {
+  font-family: "Roboto",  Open Sans, 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+}
+
+
+.top { /* Dark blue part */
+  background-color: #1F2937;
+  color: white;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #1F2937;
+  text-align: center;
+  color: #E5E7EB;
+}
+
+.grow {
+  background-color: crimson;
+  text-align: center;
+  color: #E5E7EB;
+  flex-grow: 1;
+}
